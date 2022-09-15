@@ -12,6 +12,14 @@ const Comment = (props) => {
         <div className="card-body d-flex flex-column">
           <p className="card-text flex-grow-1">{comment.body}</p>
           <div className="d-flex flex-row align-items-center pt-2">
+          <Link to={`/@${comment.ph.username}`} className="placeholder">
+              <img
+                src={comment.ph.image}
+                className="placeholder"
+                alt={comment.ph.username}
+              />
+            </Link>
+            &nbsp;
             <Link to={`/@${comment.seller.username}`} className="user-pic mr-2">
               <img
                 src={comment.seller.image}

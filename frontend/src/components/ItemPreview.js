@@ -36,9 +36,11 @@ const ItemPreview = (props) => {
     >
       <img
         alt="item"
-        src={item.image}
+        src={item.seller.image}
         className="card-img-top item-img"
         style={{ borderRadius: "20px" }}
+        placeholderImg="D:\project\Anythink-Market-v7tsp\frontend\src\imgs\placeholder.png"
+        onerror="D:\project\Anythink-Market-v7tsp\frontend\src\imgs\placeholder.png"
       />
       <div className="card-body">
         <Link to={`/item/${item.slug}`} className="text-white">
